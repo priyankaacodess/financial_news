@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Data and outputs
+outputs/
+models/
+!models/.gitkeep
+data/sample_data/*.csv
+!data/sample_data/.gitkeep
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

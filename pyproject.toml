@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "financial-news-sentiment"
+version = "0.1.0"
+description = "Transformer-based sentiment analysis for financial news with market correlation analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "accelerate>=0.30.0",
+  "altair>=5.0.0",
+  "datasets>=2.18.0",
+  "numpy>=1.26.0",
+  "pandas>=2.1.0",
+  "pyyaml>=6.0.0",
+  "scikit-learn>=1.4.0",
+  "streamlit>=1.40.0",
+  "torch>=2.2.0",
+  "transformers>=4.45.0",
+  "yfinance>=0.2.44",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["financial_news_sentiment*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
